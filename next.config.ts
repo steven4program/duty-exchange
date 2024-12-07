@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
+import { LANGUAGES } from "@/constant/languages";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  locales: LANGUAGES,
+  defaultLocale: LANGUAGES.TC,
 };
 
 export default nextConfig;
